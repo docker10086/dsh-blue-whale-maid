@@ -1,0 +1,4 @@
+# Minimal DSH desktop widget: one animated character, no theme or panels.
+- insert:
+    - id: dsh-blue-whale-maid
+      name: dsh-blue-whale-maid

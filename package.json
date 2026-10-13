@@ -1,0 +1,40 @@
+{
+  "name": "dsh-blue-whale-maid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal animated blue whale-maid widget for the DSH desktop client.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop-widget",
+    "whale-maid"
+  ],
+  "license": "UNLICENSED"
+}
